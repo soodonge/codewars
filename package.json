@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/imskojs/codewarz/issues"
   },
-  "homepage": "https://github.com/imskojs/codewarz#readme"
+  "homepage": "https://github.com/imskojs/codewarz#readme",
+  "dependencies": {
+    "chai": "^3.5.0"
+  }
 }

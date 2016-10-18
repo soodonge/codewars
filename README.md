@@ -36,3 +36,11 @@ even_or_odd.test.js
 mocha -w even_or_odd.*
 ```
 
+
+### 자주 GitHub에 commit + push 하세요
+```bash
+git add .
+git commit -m 'even or odd'
+git push origin master
+```
+
