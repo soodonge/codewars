@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript">
+    alert('이제부터 가위,바위,보를 하겠습니다.'+''+'가위,바위,보'+''+'3개중 하나만 내주세요')
+    var input = prompt('가위~바위~보!')
+    while(Math.random()){
+      var x = Math.floor(Math.random() * 10);
+      console.log(x);
+      if(x < 4 ){
+        alert('나는 가위')
+        if(input === '바위'){
+          alert('당신이 이겼어요!')
+        }else if(input === '가위'){
+          alert('비겻어요')
+        }else if(input === '보'){
+          alert('당신이 졌어요!')
+        }
+      }else if(x >= 4 && x < 7 ){
+        alert('나는 주먹')
+        if(input === '바위'){
+          alert('비겻어요!')
+        }else if(input === '가위'){
+          alert('당신이 졌어요!')
+        }else if(input === '보'){
+          alert('당신이 이겼어요!')
+        }
+      }else if(x >= 7 && x <= 9 ){
+        alert('나는 보')
+        if(input === '바위'){
+          alert('당신이 졌어요!')
+        }else if(input === '가위'){
+          alert('당신이 이겼어요')
+        }else if(input === '보'){
+          alert('비겼어요!')
+        }
+      }break;
+    }alert('만일 당신이 한번더 하고 싶다면 새로고침해주세요!')
+  </script>
+</body>
+</html>
